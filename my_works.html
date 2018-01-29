@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Moj portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Cantarell:700i|Nova+Round|Lobster|Roboto|Roboto+Condensed" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="js/lightbox/css/lightbox.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">		
+		<link href="vegas/vegas.css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 header">
+				<a href="index.html">My portfolio</a>
+				<p>Check out my works here!</p>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="hamburger">
+				<span class="glyphicon glyphicon-align-justify"></span>
+			</div>
+		<!--	<div class="col-xs-12"> -->
+				<ul class="main-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_me.html">About me</a></li>
+					<li><a href="my_works.html">My works</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		</div>
+
+	
+	
+	<!--
+	<div class="row">
+		<div class="slideshow">			
+		</div>
+	</div>
+	-->
+	
+	<a id="photomontages"></a>
+	<h1 class="section-title">Photoshop photomontages</h1>
+	
+		<div class="row gallery">
+		
+			<div class="col-xs-6">
+				<a href="img/ps1_g.jpg" data-lightbox="abc"><img src="img/ps1_t.png"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/ps2_g.jpg" data-lightbox="abc"><img src="img/ps2_t.png"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/ps3_g.jpg" data-lightbox="abc"><img src="img/ps3_t.png"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/ps4_g.jpg" data-lightbox="abc"><img src="img/ps4_t.png"></a>
+			</div>
+							
+		</div>	
+		
+	<a id="photos"></a>
+	<h1 class="section-title">Photos</h1>
+
+		<div class="row gallery">
+		
+			<div class="col-xs-6">
+				<a href="img/3179_g.jpg" data-lightbox="abc"><img src="img/3179_t.jpg"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/5208_g.jpg" data-lightbox="abc"><img src="img/5208_t.jpg"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/4833_g.jpg" data-lightbox="abc"><img src="img/4833_t.jpg"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/1396_g.jpg" data-lightbox="abc"><img src="img/1396_t.jpg"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/4747_g.jpg" data-lightbox="abc"><img src="img/4747_t.jpg"></a>
+			</div>
+			<div class="col-xs-6">
+				<a href="img/4075_g.jpg" data-lightbox="abc"><img src="img/4075_t.jpg"></a>
+			</div>					
+		</div>	
+
+
+
+
+
+
+
+
+		
+		<div class="row">
+			<div>
+				<form>
+					<div class="col-xs-12 contact"> 
+						<label id="contactlabel" for="Input"><h1 class="section-title">QUICK CONTACT</h1></label>
+						<input type="name" class="form-control" id="Name" placeholder="Name">
+					</div>
+	
+					<div class="col-xs-12 contact">
+						<input type="subject" class="form-control" id="Subject" placeholder="Subject">
+					</div>
+	
+					<div class="col-xs-12 contact">
+						<input type="email" class="form-control" id="Email" placeholder="Email">
+					</div>
+	
+					<div class="col-xs-12 contact">
+						<input type="message" class="form-control" id="Message" placeholder="Message">
+					</div>
+	
+					<div class="col-xs-12 contact">
+						<button type="submit" class="button">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	<div class="row footer">
+		<div class="col-xs-12">
+			<img src="img/footer_title.png">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_me.html">About me</a></li>
+				<li><a href="my_works.html">My works</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>			
+		</div>
+	</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/lightbox/js/lightbox.js"></script>
+		<script src="vegas/vegas.js"></script>
+		<script>
+			$(".slideshow").vegas({
+			slides: [
+			{ src: "img/ss1.jpg" },
+			{ src: "img/ss2.jpeg"},
+			{ src: "img/ss3.jpg" },
+			{ src: "img/ss4.jpg" }
+					],
+					
+				overlay: 'js/vegas/overlays/01.png',
+				transition: 'random'
+				
+			});
+		</script>
+		<script>
+			$('.hamburger').click(function(){
+				$('.main-menu').slideToggle();
+			});
+		</script>
+	</body>
+</html>

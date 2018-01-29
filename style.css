@@ -1,0 +1,298 @@
+body {
+   background-image: url("img/bgnd2.png");
+}
+
+.header{
+	height: 500px;
+	/*height: 100vh;*/
+	background: url('img/H_IMG_5208.jpg') no-repeat; /*header_BG*/
+	background-size: cover;
+}
+
+.header a{
+	text-shadow: 2px 3px 7px orange;
+	font-size: 32pt;
+	color: black;
+	margin: 30px 0 0 40px; /*40px 0 0 40px*/
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Nova Round', cursive;
+}
+
+.header a:hover{
+	text-decoration: none;
+}
+
+.header p{
+	text-shadow: 2px 3px 7px orange;
+	font-size: 48pt;
+	text-align: center;
+	margin-top: 100px; /*150px*/
+	color: black;
+	/*text-transform: lowercase;*/
+	font-family: 'Cantarell', sans-serif;
+}
+
+@media screen and (max-width:760px) {
+	.header{
+		height: 300px;
+	}
+	.header p{
+		display: none;
+	}
+	.header a{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+		font-size: 14pt;
+	}
+}
+
+
+.main-menu{
+	width: 100%;
+	/*background-image: url("img/bgnd.png");*/
+	background-color: #111111;
+	padding-left: 5%; /*original: 30px*/
+}
+
+.main-menu li{
+	font-family: 'Dosis', sans-serif;
+	display: inline-block;
+	line-height: 100px;
+	margin-right: 7%; /*original: 30px*/
+	transition: 0.3s;
+}
+
+.main-menu li a{
+	color: orange;
+	font-size: 18pt;
+	line-height: 80px; /*orig 100px*/
+	padding-left: 20px; 
+	padding-right: 20px; 
+	display: block;	
+}
+
+.main-menu li:hover{
+	background-color: orange;
+}
+
+.main-menu li a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.hamburger {
+	color: orange;
+	display: none;
+	line-height: 100px;
+	background-color: #111111;
+	padding-right: 50px;
+	text-align: right;	
+}
+
+.hamburger .glyphicon {
+	font-size: 24pt;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width:760px){
+	.main-menu li {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	.main-menu {
+		padding: 0;
+		text-align: center;
+		display: none;
+	}
+	
+	.hamburger {
+		display: block;
+	}
+}
+
+
+@media screen and (min-width:761px) {
+	.main-menu {
+		display: block!important;
+	}
+}
+
+
+.gallery img{
+	width: 100%;	
+}
+
+.gallery div{
+	padding: 0;
+}
+
+.form-control {
+	width: 60%;
+}
+
+.contact {
+	color: orange;
+	background-color: #111111;
+	padding-bottom: 10pt;
+	padding-left: 60pt;
+	width: 100%;
+	height: 100%;
+}
+
+#contactlabel {
+	padding-top: 50pt;
+	padding-bottom: 10pt;
+	font-size: 24pt;
+}
+
+#Message {
+	height: 180px;
+	padding-bottom: 120pt;
+}
+
+.button {
+	width: 120px;
+	color: orange;
+	background-color: #111111;
+	font-family: 'Dosis', sans-serif;
+	font-size: 12pt;
+}
+
+.footer{
+	background: url('img/F_IMG_5073.jpg') no-repeat; /*footer_bg*/
+	background-size: cover;
+	height: 400px;
+}
+
+.footer img{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+.footer ul{
+	font-family: 'Cantarell', sans-serif;
+	float: right;
+	margin-top: 160px; /*orig:300px*/
+	margin-right: 50px;
+}
+
+.footer ul li{
+	display: inline-block;
+}
+
+.footer ul li a{
+	color: orange;
+	font-size: 18pt;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	text-shadow: 2px 3px 7px #000000;
+}
+
+.carousel img {
+	width: 100%;
+}
+
+.carousel {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.slideshow {
+	height: 400px;
+	width: 100%;
+	margin-bottom: 50px;	
+}
+
+.square-blocks{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.square-blocks span{
+	font-size: 100pt;
+}
+
+.square-blocks a{
+	color: orange;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.square-blocks a:hover{
+	color: black;
+	text-shadow: 0px 0px 120px orange;
+}
+
+.square-blocks div{
+	height: 250px;
+}
+
+.square-blocks .light-gray-bg{
+	background-color: #111111;
+}
+
+.square-blocks .dark-gray-bg{
+	background-color: black;
+}
+
+.square-blocks p {
+	color: orange;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18pt;
+	text-align: center;
+	text-transform: uppercase; 
+}
+
+.section-title{
+	text-align: center;
+	font-size: 24pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: orange;
+	font-family: 'Cantarell', sans-serif;
+}
+
+.about-me img{
+	width: 100%;
+}
+
+.about-me div{
+	padding: 0;
+}
+
+.about-me-text{
+	font-size: 13pt;
+	padding-left: 40px !important;
+	padding-right: 40px;
+	color: orange;
+	text-align: justify;
+	font-family: 'Dosis', sans-serif;
+}
+
+.carousel-caption{
+	font-size: 16pt;
+	font-family: 'Nova Round', cursive;
+	color: orange;
+	text-shadow:
+	3px   3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+}
+
+
+.blocks
